@@ -1,0 +1,28 @@
+
+<table datatable class="table table-striped table-hover table-bordered ">
+    <thead class="table-success">
+        <tr class="text-center">
+            <th>Titulo</th>
+            <th>Synopsis</th>
+            <th>Año</th>
+            <th>Cover</th>
+        </tr>
+    </thead>
+    
+    <!--Aqui debo insertar el componente hijo-->
+    <tbody>
+        <tr *ngFor="let item of data" > <!--Itero la informacion de la base de datos-->
+            <td>{{item.title}}</td>
+            <td>{{item.synopsis}}</td>
+            <td>{{item.year}}</td>
+            <td>{{item.cover}}</td>
+        </tr>
+    </tbody>
+        
+     <!--Inserto mi componente hijo-->
+
+</table>   
+
+    
+    
+    
