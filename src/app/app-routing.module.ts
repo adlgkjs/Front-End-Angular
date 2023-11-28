@@ -6,8 +6,10 @@ import { AppComponent } from './app.component';
 import { AddMovieComponent } from './add-movie/add-movie.component';
 
 const routes: Routes = [ 
-  
+  {path:'index', component:MoviesComponent},  
+  {path:'peliculas', component:MovieComponent},
   {path:'add-movie', component:AddMovieComponent}
+  
 ];
 
 @NgModule({

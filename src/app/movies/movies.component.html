@@ -1,31 +1,14 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
-  <body>
-    <div class="card">
-        <div class="card-header d-flex justify-content-between align-items-center">           
-            <img src="./assets/img/cine3.jpg" alt="Imagen de cine" width="100" class="rounded" >            
-            <div></div>            
-            <h1>Listado de Peliculas</h1>     
-            <div></div>   
-            <div></div>  
-            <div></div>   
-        </div>
-
-        <div class="card-body">          
-          <app-movie></app-movie>
-        </div>
-        
-        <div class="card-footer text-body-secondary d-flex flex-column align-items-center justify-content-center">
-          <p class="mb-0">Julio César Salazar Ibarra</p>
-          <p class="mt-0 mb-0">Lic. Desarrollo de Sistemas Web</p>
-        </div>
-      </div>   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  </body>
-</html>
+<div class="content">         
+  <div class="row d-flex justify-content-center my-3">    
+    <div class="d-flex justify-content-center col-6 border p-2">
+      <img src="./assets/img/cine3.jpg" class="card-img-top" >
+      <div class="mx-2 ">
+        <h5 class="card-title text-center">CRUD de Peliculas</h5>
+        <p class="card-text text-center">Esta es una aplicacion donde se simula tener un catalogo de peliculas, se presentan en una tabla el titulo, synopsis, año y cover de cada una de las peliculas. Asi mismo podras añadir, eliminar y editar los registros que tu quieras.</p>
+      </div>
+    </div>
+  </div>       
+  <router-outlet></router-outlet>   
+  <!-- <app-movie></app-movie> -->
+</div>
+    

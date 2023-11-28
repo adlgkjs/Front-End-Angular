@@ -1,4 +1,33 @@
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet>
+<app-movies></app-movies> Inserto mi componente Padre -->
 
-
-<app-movies></app-movies> <!--Inserto mi componente Padre-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">           
+            <img src="./assets/img/cine3.jpg" alt="Imagen de cine" width="100" class="rounded" >            
+            <div></div>            
+            <h1>Peliculas</h1>     
+            <div></div>   
+            <a routerLink="/index" class="btn btn-primary">Inicio</a>
+            <a routerLink="/peliculas" class="btn btn-primary">Peliculas</a>             
+        </div>
+      
+        <router-outlet></router-outlet>
+      
+        <div class="card-footer text-body-secondary d-flex flex-column align-items-center justify-content-center">
+          <p class="mb-0">Julio César Salazar Ibarra</p>
+          <p class="mt-0 mb-0">Lic. Desarrollo de Sistemas Web</p>
+        </div>
+      </div>          
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

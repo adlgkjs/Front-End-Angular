@@ -21,13 +21,13 @@ export class AddMovieComponent {
   submitForm(movieForm:NgForm){  
     if(movieForm.value.id==null){
       this.cs.createMovie(movieForm.value).subscribe((response)=>{
-        this.router.navigate(["/"]);
-        window.location.reload(); //Esto es para que la pagina se recargue y se vea reflejado el nuevo registro
+        this.router.navigate(["/peliculas"]);
+       
       })
     }else{
       this.cs.updateMovie(movieForm.value.id, movieForm.value).subscribe((response)=>{
-        this.router.navigate(["/"]);
-        window.location.reload();
+        this.router.navigate(["/peliculas"]);
+        
       })
     }  
     
