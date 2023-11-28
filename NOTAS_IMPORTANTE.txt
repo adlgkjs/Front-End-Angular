@@ -1,0 +1,2 @@
+Tengo que correr el servidor de Angular con este comando: ng serve
+Si no lo hago de esta manera no se podran obtener los datos de la api y no se visualizara correctamente la pagina.

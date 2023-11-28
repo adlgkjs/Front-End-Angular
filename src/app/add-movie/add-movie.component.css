@@ -1,0 +1,13 @@
+.estilosBoton{
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;    
+}
+
+.estilosBoton:hover{
+    background-color: #cc2f3f;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;    
+}
