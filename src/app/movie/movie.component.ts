@@ -33,8 +33,10 @@ export class MovieComponent implements OnInit{ //agrege implements OnInit
   }
 
   ondelete(id:number){
-    this.cs.deleteMovie(id).subscribe((response)=>{
-      this.llenarData();
-    });
+    if(confirm('¿Estas seguro que quieres eliminar este elemento?')){
+      this.cs.deleteMovie(id).subscribe((response)=>{
+        this.llenarData();
+      });
+    }
   }  
 }

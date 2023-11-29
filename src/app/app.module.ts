@@ -10,21 +10,23 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataTablesModule } from "angular-datatables";
 
 import { ApiMoviesService } from './service/api-movies.service';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     MoviesComponent,
     MovieComponent,
-    AddMovieComponent
+    AddMovieComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     DataTablesModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule  
   ],
   providers: [],
   bootstrap: [AppComponent]
